@@ -44,12 +44,12 @@ const language = () => {
         `; //Main
 
     document.querySelector('.main__name').innerHTML = `Иван <br> Федак`;
-    document.querySelector('.main__ocupation').innerHTML = `Веб | Фронтенд Разработчик <br> 16 лет, Мукачево`; //About
+    document.querySelector('.main__ocupation').innerHTML = `Веб | Фронтенд Разработчик <br> живу в Украине`; //About
 
     document.querySelector('.about__title').textContent = `Обо мне`;
     document.querySelector('.about__text').innerHTML = `
             <span>Привет, Меня зовут Иван – Я Веб/Фронтенд разработчик из Украины. Интересуюсь веб-разработкой и всем, что с ней связано. </span>
-            <span>Прошел много курсов на площадке "Udemy". Имею 2 года опыта работы в этой области.</span>
+            <span>Прошел много курсов на площадке "Udemy". Имею больше чем пол года опыта работы в этой области.</span>
             <span>Всегда готов создать Веб сайт или Веб приложение для вас.</span>
         `; //Skills
 
