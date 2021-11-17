@@ -101,6 +101,10 @@ const portfolio = () => {
     href: 'https://ivan20050120.github.io/background/',
     img: 'color.png',
     title: 'Backround Color changer App'
+  }, {
+    href: 'https://ivan20050120.github.io/toDO/',
+    img: 'toDo.jpg',
+    title: 'To Do List App'
   }];
 
   function createCard(db) {
