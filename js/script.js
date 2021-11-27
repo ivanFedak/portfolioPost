@@ -109,6 +109,14 @@ const portfolio = () => {
     href: 'https://ivan20050120.github.io/musicker/',
     img: 'musicker.png',
     title: 'Listen To Music Any Time Enjoy Landing Page'
+  }, {
+    href: 'https://ivan20050120.github.io/creamBride/',
+    img: 'cream.png',
+    title: 'Buy Bride Cream'
+  }, {
+    href: 'https://ivan20050120.github.io/spendMoney/',
+    img: 'spend.png',
+    title: 'Spend Elon Musk Money'
   }];
 
   function createCard(db) {
