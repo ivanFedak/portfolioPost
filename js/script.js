@@ -82,14 +82,19 @@ const portfolio = () => {
     img: 'papperGame.jpg',
     title: 'Rock-Paper-Scissors-Master'
   }, {
+    href: 'https://ivan20050120.github.io/checkList/',
+    img: 'checkList.png',
+    title: 'Life Checklist'
+  }, {
     href: 'https://ivan20050120.github.io/healthy/',
     img: 'healthy.jpg',
     title: 'Stay healthy landing page'
-  }, {
-    href: 'https://ivan20050120.github.io/pay/',
-    img: 'pay.png',
-    title: 'Money Transfer & Online Payments'
-  }, {
+  }, // {
+  //     href: 'https://ivan20050120.github.io/pay/',
+  //     img: 'pay.png',
+  //     title: 'Money Transfer & Online Payments',
+  // },
+  {
     href: 'https://ivan20050120.github.io/relvise/',
     img: 'relvise.png',
     title: 'Finance and Consultancy Solution Landing Page'
@@ -97,25 +102,27 @@ const portfolio = () => {
     href: 'https://ivan20050120.github.io/wordCounter/',
     img: 'wordCounter.png',
     title: 'Word Counter App'
-  }, {
-    href: 'https://ivan20050120.github.io/background/',
-    img: 'color.png',
-    title: 'Backround Color changer App'
-  }, {
+  }, // {
+  //     href: 'https://ivan20050120.github.io/background/',
+  //     img: 'color.png',
+  //     title: 'Backround Color changer App',
+  // },
+  {
     href: 'https://ivan20050120.github.io/toDO/',
     img: 'toDo.jpg',
     title: 'To Do List App'
-  }, {
-    href: 'https://ivan20050120.github.io/musicker/',
-    img: 'musicker.png',
-    title: 'Listen To Music Any Time Enjoy Landing Page'
-  }, {
+  }, // {
+  //     href: 'https://ivan20050120.github.io/musicker/',
+  //     img: 'musicker.png',
+  //     title: 'Listen To Music Any Time Enjoy Landing Page',
+  // },
+  {
     href: 'https://ivan20050120.github.io/creamBride/',
     img: 'cream.png',
     title: 'Buy Bride Cream'
   }, {
     href: 'https://ivan20050120.github.io/spendMoney/',
-    img: 'spend.png',
+    img: 'spend2.png',
     title: 'Spend Elon Musk Money'
   }];
 
@@ -860,6 +867,38 @@ const scroll = () => {
 
 /***/ }),
 
+/***/ "./src/js/modules/swipeBurger2.js":
+/*!****************************************!*\
+  !*** ./src/js/modules/swipeBurger2.js ***!
+  \****************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+const swipeBurger2 = () => {
+  const btn = document.querySelector('.icon-menu'),
+        menu = document.querySelector('.menu__body');
+  document.addEventListener('touchmove', moveFun);
+
+  function moveFun(e) {
+    const cordX = e.targetTouches[0].clientX;
+    const wind = window.innerWidth / 3;
+
+    if (cordX > wind) {
+      showMenu();
+    }
+  }
+
+  function showMenu() {
+    btn.classList.add('_active');
+    menu.classList.add('_active');
+    document.body.classList.add('_lock');
+  }
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (swipeBurger2);
+
+/***/ }),
+
 /***/ "./src/js/services/default.js":
 /*!************************************!*\
   !*** ./src/js/services/default.js ***!
@@ -958,13 +997,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_language__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/language */ "./src/js/components/language.js");
 /* harmony import */ var _services_default__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./services/default */ "./src/js/services/default.js");
 /* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/burger */ "./src/js/modules/burger.js");
-/* harmony import */ var _libs_spoller__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./libs/spoller */ "./src/js/libs/spoller.js");
-/* harmony import */ var _libs_slider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./libs/slider */ "./src/js/libs/slider.js");
-/* harmony import */ var _libs_dinamycAdaptiv__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./libs/dinamycAdaptiv */ "./src/js/libs/dinamycAdaptiv.js");
-/* harmony import */ var _libs_tests__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./libs/tests */ "./src/js/libs/tests.js");
-/* harmony import */ var _modules_header__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/header */ "./src/js/modules/header.js");
-/* harmony import */ var _modules_scroll__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/scroll */ "./src/js/modules/scroll.js");
-/* harmony import */ var _components_portfolio__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/portfolio */ "./src/js/components/portfolio.js");
+/* harmony import */ var _modules_swipeBurger2__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/swipeBurger2 */ "./src/js/modules/swipeBurger2.js");
+/* harmony import */ var _libs_spoller__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./libs/spoller */ "./src/js/libs/spoller.js");
+/* harmony import */ var _libs_slider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./libs/slider */ "./src/js/libs/slider.js");
+/* harmony import */ var _libs_dinamycAdaptiv__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./libs/dinamycAdaptiv */ "./src/js/libs/dinamycAdaptiv.js");
+/* harmony import */ var _libs_tests__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./libs/tests */ "./src/js/libs/tests.js");
+/* harmony import */ var _modules_header__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/header */ "./src/js/modules/header.js");
+/* harmony import */ var _modules_scroll__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/scroll */ "./src/js/modules/scroll.js");
+/* harmony import */ var _components_portfolio__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/portfolio */ "./src/js/components/portfolio.js");
+
 
 
 
@@ -978,16 +1019,17 @@ __webpack_require__.r(__webpack_exports__);
 
 window.onload = function () {
   (0,_components_language__WEBPACK_IMPORTED_MODULE_0__["default"])();
-  (0,_libs_tests__WEBPACK_IMPORTED_MODULE_6__["default"])();
+  (0,_libs_tests__WEBPACK_IMPORTED_MODULE_7__["default"])();
   (0,_services_default__WEBPACK_IMPORTED_MODULE_1__["default"])(); //Buid
 
-  (0,_components_portfolio__WEBPACK_IMPORTED_MODULE_9__["default"])();
-  (0,_modules_burger__WEBPACK_IMPORTED_MODULE_2__["default"])(); // spoller();
+  (0,_components_portfolio__WEBPACK_IMPORTED_MODULE_10__["default"])();
+  (0,_modules_burger__WEBPACK_IMPORTED_MODULE_2__["default"])();
+  (0,_modules_swipeBurger2__WEBPACK_IMPORTED_MODULE_3__["default"])(); // spoller();
   // slider();
 
-  (0,_libs_dinamycAdaptiv__WEBPACK_IMPORTED_MODULE_5__["default"])();
-  (0,_modules_header__WEBPACK_IMPORTED_MODULE_7__["default"])();
-  (0,_modules_scroll__WEBPACK_IMPORTED_MODULE_8__["default"])();
+  (0,_libs_dinamycAdaptiv__WEBPACK_IMPORTED_MODULE_6__["default"])();
+  (0,_modules_header__WEBPACK_IMPORTED_MODULE_8__["default"])();
+  (0,_modules_scroll__WEBPACK_IMPORTED_MODULE_9__["default"])();
 };
 }();
 /******/ })()
