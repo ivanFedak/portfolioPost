@@ -132,6 +132,10 @@ const portfolio = () => {
     href: 'https://tmovieappivan.herokuapp.com/',
     img: 'movie.png',
     title: 'Movie App'
+  }, {
+    href: 'https://booksivan.herokuapp.com/',
+    img: 'book.png',
+    title: 'Books App'
   }];
 
   function createCard(db) {
@@ -882,26 +886,7 @@ const scroll = () => {
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
-const swipeBurger2 = () => {
-  const btn = document.querySelector('.icon-menu'),
-        menu = document.querySelector('.menu__body');
-  document.addEventListener('touchmove', moveFun);
-
-  function moveFun(e) {
-    const cordX = e.targetTouches[0].clientX;
-    const wind = window.innerWidth / 3;
-
-    if (cordX > wind) {
-      showMenu();
-    }
-  }
-
-  function showMenu() {
-    btn.classList.add('_active');
-    menu.classList.add('_active');
-    document.body.classList.add('_lock');
-  }
-};
+const swipeBurger2 = () => {};
 
 /* harmony default export */ __webpack_exports__["default"] = (swipeBurger2);
 
