@@ -85,11 +85,12 @@ const portfolio = () => {
     href: 'https://ivan20050120.github.io/checkList/',
     img: 'checkList.png',
     title: 'Life Checklist'
-  }, {
-    href: 'https://ivan20050120.github.io/healthy/',
-    img: 'healthy.jpg',
-    title: 'Stay healthy landing page'
-  }, // {
+    },
+//.  {
+//     href: 'https://ivan20050120.github.io/healthy/',
+//     img: 'healthy.jpg',
+//     title: 'Stay healthy landing page'
+//   }, // {
   //     href: 'https://ivan20050120.github.io/pay/',
   //     img: 'pay.png',
   //     title: 'Money Transfer & Online Payments',
